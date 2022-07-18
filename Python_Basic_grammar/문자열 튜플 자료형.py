@@ -1,3 +1,7 @@
+# 이스케이프 시퀀스 
+data = "Don't you know \"python\"?" 
+print(data)
+
 # 문자열 연산
 a = "Hello"
 b = "World"
