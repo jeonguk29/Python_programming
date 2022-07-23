@@ -1,0 +1,12 @@
+import sys     
+a, b, c = map(int, input().split())
+
+if a == b and b == c:
+    print(10000 + (a * 1000))
+elif a == b or b == c:  # a == b or b == c or a == c라고 쓸 수도 있었겠지만, 이렇게 되면 어떤 눈이 같은 눈인지를 한번 더 고려해야 됨
+    print(1000 + (b *100))       
+elif a == c:
+    print(1000 + (a *100))
+else:      
+    Max = max(a,b,c)
+    print(Max * 100)
