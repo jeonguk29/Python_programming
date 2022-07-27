@@ -16,6 +16,3 @@ for i in data2:
     print(i,'',end='')    # end에 빈 문자열을 지정하면 다음 번 출력이 바로 뒤에 오게 됨)
 
 
-
-#data = list(map(int, input().split()))
-
