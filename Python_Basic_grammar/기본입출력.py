@@ -21,7 +21,8 @@ print(a, b, c)
 # 데이터의 개수 입력
 n = int(input())
 # 각 데이터를 공백을 기준으로 구분하여 입력
-data = list(map(int, input().split()))
+data = list(map(int, input().split()))  # 리스트 각 요소를 int로 바꿀때는 이렇게 하고 
+plans = input().split() # 아래와 같이 하면 문자열 리스트로 자동 변환됨 
 data.sort(reverse=True)
 print(data)
 

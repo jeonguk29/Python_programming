@@ -99,3 +99,39 @@ print(lcm(21, 14))  # 최소 공배수(LCM) 계산
 # 최소 공배수란 : 공통된 배수 중에서 가장 작은 값을 의미합니다
 
 # 이밖에도 math라이브러리는 팩토리얼 과 재곱끈 과 같은 다양한 함수부터 원주율과 같은 상수 까지 포함하고 있으니까 여러분들이 수학적 기능이 필요할때 마다 요긴하게 호출해서 사용할수 있습니다
+
+
+
+# 알파벳인경우 확인 함수
+
+data = input()
+result = []
+
+value = 0
+# 문자를 하나씩 확인하며
+for x in data:
+    # 알파벳인 경우 결과 리스트에 삽입    https://appia.tistory.com/178   참고
+    if x.isalpha():
+        result.append(x)
+    # 숫자는 따로 더하기
+    else:
+        value += int(x)
+
+# 리스트 한줄에 출력 
+# 최종 결과 출력(리스트를 문자열로 변환하여 출력)
+print(''.join(result))
+
+
+
+
+#문자열 교체 
+
+croatia = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+word = input()
+
+for i in croatia :
+    word = word.replace(i, '*')  # input 변수와 동일한 이름의 변수 i 와 같은게 있다면 *로 바꿔버림 
+    print(word)
+print(word)
+print(len(word))
+
